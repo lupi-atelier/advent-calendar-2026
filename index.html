@@ -83,6 +83,24 @@ box-sizing: border-box;
 
 .door span {
   display: none;
+  .door {
+    position: relative;
+}
+
+.door .door-number {
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 2px 5px #172b65;
+}
 }
 
 .door.special {
@@ -180,7 +198,7 @@ const calendar = document.getElementById("calendar");
 for (let day = 1; day <= 31; day++) {
   const door = document.createElement("button");
   door.className = day === 31 ? "door special" : "door";
-  door.innerHTML = `${day}<span>${day === 31 ? "FINAL DAY ✨" : "OPEN THE DOOR"}</span>`;
+  door.innerHTML = `<span class="door-number">${day}</span><span>${day === 31 ? "FINAL DAY ✨" : "OPEN THE DOOR"}</span>`;
   door.onclick = () => openModal(day);
   calendar.appendChild(door);
 }
