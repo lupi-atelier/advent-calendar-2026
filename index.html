@@ -81,14 +81,14 @@ box-sizing: border-box;
   filter: brightness(1.1);
 }
 
-.door span {
-  display: none;
+.door > span:not(.door-number) {
+    display: none;
   .door {
     position: relative;
 }
 
 .door .door-number {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 22%;
     left: 50%;
@@ -100,7 +100,7 @@ box-sizing: border-box;
     color: #fff;
     line-height: 1;
     text-shadow: 0 2px 5px #172b65;
-}
+    z-index: 2;
 }
 
 .door.special {
