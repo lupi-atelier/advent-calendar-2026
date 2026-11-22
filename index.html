@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ルピのマイファミリー｜Winter Calendar 2026</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+  color: #526078;
+  background: linear-gradient(145deg, #f4f5fc, #e9f0f8, #f9f2f7);
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 45px 15px 25px;
+}
+
+h1 {
+  color: #777b9d;
+  font-size: clamp(25px, 5vw, 38px);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #9b9bb4;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.message {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.9;
+  padding: 0 15px 25px;
+}
+
+.calendar {
+  max-width: 850px;
+  margin: auto;
+  padding: 15px 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.door {
+  min-height: 105px;
+  border: 1px solid #d9dbea;
+  border-radius: 13px;
+  background: rgba(255,255,255,0.75);
+  color: #8588a8;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(120,130,170,0.08);
+  transition: 0.2s;
+}
+
+.door:hover {
+  transform: translateY(-4px);
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(120,130,170,0.15);
+}
+
+.door span {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: 7px;
+  letter-spacing: 1px;
+}
+
+.door.special {
+  background: linear-gradient(135deg, #e9e5f6, #fff3e8);
+  border-color: #d5c8e5;
+  color: #8c789e;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 15px 45px;
+  color: #a2a1b5;
+  font-size: 12px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(68,75,100,0.45);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.modal.show { display: flex; }
+
+.modal-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(50,50,90,0.2);
+}
+
+.modal-content h2 {
+  color: #8985ad;
+}
+
+.modal-content p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.close {
+  margin-top: 15px;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 20px;
+  background: #e9e8f5;
+  color: #747795;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .calendar { gap: 8px; padding: 10px 12px 35px; }
+  .door { min-height: 78px; font-size: 23px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="subtitle">LUPI'S FAMILY PRESENTS</div>
+  <h1>Winter Family Calendar</h1>
+  <div class="subtitle">DECEMBER 2026</div>
+</header>
+
+<div class="message">
+  12月の小さな扉を、ひとつずつ開けてみよう。<br>
+  今日はどんな出会いが待っているかな？
+</div>
+
+<main class="calendar" id="calendar"></main>
+
+<footer>
+  A little happiness for every day.<br>
+  Lupi's Family Winter Calendar 2026
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+    <button class="close" onclick="closeModal()">閉じる</button>
+  </div>
+</div>
+
+<script>
+const calendar = document.getElementById("calendar");
+
+for (let day = 1; day <= 31; day++) {
+  const door = document.createElement("button");
+  door.className = day === 31 ? "door special" : "door";
+  door.innerHTML = `${day}<span>${day === 31 ? "FINAL DAY ✨" : "OPEN THE DOOR"}</span>`;
+  door.onclick = () => openModal(day);
+  calendar.appendChild(door);
+}
+
+function openModal(day) {
+  document.getElementById("modal-title").textContent =
+    day === 31 ? "December 31 ✨" : `December ${day}`;
+
+  document.getElementById("modal-text").textContent =
+    day === 31
+      ? "みんな、今年も一緒に過ごしてくれてありがとう！また来年もよろしくね。"
+      : `これは${day}日目の扉。これからどんな物語が待っているかな？`;
+
+  document.getElementById("modal").classList.add("show");
+}
+
+function closeModal() {
+  document.getElementById("modal").classList.remove("show");
+}
+</script>
+
+</body>
+</html>
