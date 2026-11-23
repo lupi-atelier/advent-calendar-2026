@@ -139,22 +139,54 @@ footer {
 .modal.show { display: flex; }
 
 .modal-content {
-  background: #fff;
-  border-radius: 20px;
-  padding: 35px 25px;
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 12px 40px rgba(50,50,90,0.2);
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px 25px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(50,50,90,0.2);
+}
+
+.modal-content img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 14px;
+    margin-bottom: 12px;
 }
 
 .modal-content h2 {
-  color: #8985ad;
+    color: #8985ad;
+    margin: 8px 0;
+    font-size: 26px;
+}
+
+#modal-catchphrase {
+    color: #747795;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 10px 0 18px;
 }
 
 .modal-content p {
-  line-height: 2;
-  font-size: 15px;
+    line-height: 1.9;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#modal-extra {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f3fb;
+    border-radius: 14px;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 14px;
 }
 
 .close {
@@ -211,11 +243,19 @@ footer {
 </footer>
 
 <div class="modal" id="modal">
-  <div class="modal-content">
-    <h2 id="modal-title"></h2>
-    <p id="modal-text"></p>
-    <button class="close" onclick="closeModal()">閉じる</button>
-  </div>
+    <div class="modal-content">
+        <img id="modal-image" src="" alt="">
+
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-catchphrase"></p>
+
+        <p id="modal-text"></p>
+
+        <div id="modal-extra"></div>
+
+        <button class="close" onclick="closeModal()">閉じる</button>
+    </div>
 </div>
 
 <script>
@@ -230,15 +270,65 @@ for (let day = 1; day <= 31; day++) {
 }
 
 function openModal(day) {
-  document.getElementById("modal-title").textContent =
-    day === 31 ? "December 31 ✨" : `December ${day}`;
+    const image = document.getElementById("modal-image");
+    const title = document.getElementById("modal-title");
+    const catchphrase = document.getElementById("modal-catchphrase");
+    const text = document.getElementById("modal-text");
+    const extra = document.getElementById("modal-extra");
 
-  document.getElementById("modal-text").textContent =
-    day === 31
-      ? "みんな、今年も一緒に過ごしてくれてありがとう！また来年もよろしくね。"
-      : `これは${day}日目の扉。これからどんな物語が待っているかな？`;
+    if (day === 2) {
+        image.src = "./rupi.png";
+        image.alt = "ルピ";
+        image.style.display = "block";
 
-  document.getElementById("modal").classList.add("show");
+        title.textContent = "ルピ";
+
+        catchphrase.textContent =
+            "好きなことには全力！気ままに挑戦する、ちょっと凝り性な記事の主！";
+
+        text.textContent = `こんにちは、ルピです！
+
+このアドベントカレンダーの記事を書いている主です。
+普段はnoteで、日常のことや好きな漫画・アニメ、ちょっとした出来事などを気ままに綴っています。
+
+漫画とアニメが大好き！
+面白そうなことを見つけると、ついつい挑戦したくなります。
+
+ちょっと飽きっぽいところもあるけれど、いざ始めると今度は凝りすぎてしまうんです。
+
+書いたり、作ったり、時には寄り道したり。
+そんな毎日を楽しんでいます。
+
+どうぞよろしくね！`;
+
+        extra.textContent = `【おまけ：ルピの自己紹介を見たみんな】
+
+ちびルシア「ねえねえ、ルシア！ルピ、すっごく可愛くなってるよ！」
+
+ルシア「……ああ。なかなかいい仕上がりだな」
+
+ちびルシア「もしかして、また惚れ直しちゃった？」
+
+ルシア「……お前は本当に余計なことばかり言うな」
+
+ちびルシア「やっぱり図星だー！！」`;
+
+    } else {
+        image.style.display = "none";
+        image.src = "";
+        title.textContent =
+            day === 31 ? "December 31 ✨" : `December ${day}`;
+
+        catchphrase.textContent = "";
+        extra.textContent = "";
+
+        text.textContent =
+            day === 31
+                ? "みんな、今年も一緒に過ごしてくれてありがとう!また来年もよろしくね。"
+                : `これは${day}日目の扉。これからどんな物語が待っているかな?`;
+    }
+
+    document.getElementById("modal").classList.add("show");
 }
 
 function closeModal() {
