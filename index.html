@@ -313,7 +313,37 @@ extra.innerHTML = `
     <img src="./rupi_4koma.png" alt="ルシアとちびルシアの4コマ漫画"
          style="display:block; width:100%; max-width:440px; max-height:none; height:auto; margin:0 auto; border-radius:12px;">
 `;
+      
+    } else if (day === 3) {
+        image.src = "./images/tyatyamaru.png";
+        image.alt = "ちゃちゃ丸";
+        image.style.display = "block";
 
+        title.textContent = "ちゃちゃ丸";
+
+        catchphrase.textContent =
+            "ルピの一番は、もちろん僕！";
+
+        text.textContent = `こんにちは、ちゃちゃ丸です！
+
+僕はルピと一緒に暮らしている猫です。
+
+ルピにとって、僕は最高の癒やし。
+そして、僕にとってもルピは一番大切な存在です。
+
+抱っこも膝の上も大好き！
+もちろん、ルピの隣は僕の特等席。
+
+……え？ ほかのみんなもルピのそばにいたい？
+
+それはダメです。
+だって、ルピの一番は僕なんですから！
+
+そこだけは、誰にも譲れません。
+
+これからも、ずっと一緒にいるんだからね。`;
+
+        extra.innerHTML = "";
     } else {
         image.style.display = "none";
         image.src = "";
