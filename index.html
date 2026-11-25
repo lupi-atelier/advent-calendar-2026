@@ -439,7 +439,57 @@ extra.innerHTML = `
              style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
     `;
 
-    } else {
+    } else if (day === 6) {
+    image.src = "./images/nowa-ru.png";
+    image.style.display = "block";
+
+    title.textContent = "December 6 🐉";
+
+    catchphrase.textContent =
+        "守るべきものがある限り、私は決して退かない。";
+
+    text.textContent = `我が名はノワール。
+
+ルシアが姿を変えた、黒龍の守護者だ。
+
+普段は静かに周囲を見守り、どんな状況でも冷静に判断する。
+
+多くを語る必要はない。行動で示せばいい。
+
+私が黒龍の姿になる時は
+
+仲間に重大な危険が迫ったとき。
+
+大切なものを守らなければならないとき。
+
+通常の力では対処できない強大な脅威が現れたとき。
+
+そんなときこそ、私の出番だ。
+
+大きな翼と強大な力で仲間を守り、脅威を退ける。
+
+だが、力をむやみに振るうことはしない。
+
+私は怒りに任せて戦うのではない。
+
+守るべきものがあるからこそ、戦うのだ。
+
+……安心するといい。
+
+それが、黒龍ノワールの役目だ。`;
+
+    extra.innerHTML = `
+        <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
+            <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+                【仲間を守る黒き翼】
+            </p>
+            <img src="./images/nowa-ru_noir_guardian.png" alt="仲間を守る黒龍ノワール"
+                 style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
+        </div>
+    `;
+
+} else {
+      
         image.style.display = "none";
         image.src = "";
         title.textContent =
