@@ -488,7 +488,54 @@ extra.innerHTML = `
         </div>
     `;
 
-} else {
+} else if (day === 7) {
+    image.src = "./images/ru-do.png";
+    image.style.display = "block";
+
+    title.textContent = "ルード";
+
+    catchphrase.textContent =
+        "自由気ままに駆け回る、好奇心いっぱいの探索者！";
+
+    text.textContent = `よっ！ 俺はルード！
+
+ルシアが姿を変えた、フェンリルの探索者だ。
+
+自由で野性的、そして好奇心旺盛！
+新しい場所や面白そうなものを見つけたら、じっとしてなんかいられない。
+考えるより先に、まず行動！
+
+驚異的な俊敏性とスピード、鋭い直感には自信があるぜ。
+
+……少し落ち着きがないって？
+まあ、それは否定しないけどな！
+
+俺がフェンリルの姿になる時は
+未知の場所を探索するとき。
+
+気になるものをすぐに調べたいとき。
+危険を察知し、素早く行動しなければならないとき。
+
+そんなときこそ、俺の出番だ！
+
+どんな場所でも駆け抜け、仲間のために道を切り開く。
+自由に動き回っていても、仲間のことは忘れない。
+
+どこへ行っても、最後には必ずみんなのもとへ戻るさ。
+
+さあ、次はどこへ行こうか！
+
+俺と一緒に、冒険に出かけようぜ！`;
+
+    extra.innerHTML = `
+        <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
+            <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+                【新たな冒険の扉へ】
+            </p>
+            <img src="./images/ru-do_adventure.png" alt="ルードとちびルシア、テオの冒険シーン"
+                 style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
+        </div>
+    `;
       
         image.style.display = "none";
         image.src = "";
