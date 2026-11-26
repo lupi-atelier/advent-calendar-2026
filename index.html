@@ -586,7 +586,126 @@ extra.innerHTML = `
                  style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
         </div>
     `;
-      
+
+     } else if (day === 9) {
+       image.style.display = "none";
+       image.src = "";
+       title.textContent = "9日";
+       catchphrase.textContent = "";
+       text.textContent = "";
+
+       extra.innerHTML = `
+         <div style="text-align:center; margin-bottom:22px;">
+           <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0 10px;">
+             ✧　MY FAMILY　✧
+           </p>
+           <h3 style="color:#777b9d; font-size:21px; margin:0 0 12px;">
+             ここからは、マイファミリーの日常
+           </h3>
+           <p style="color:#9992b5; font-size:13px; margin:0;">
+             ───　いつもの場所で、いつもの仲間と　───
+           </p>
+         </div>
+
+         <div style="text-align:center; line-height:2; margin-bottom:22px;">
+           <p>いつもの場所で、いつもの仲間と。</p>
+           <p>何か特別なことがなくても、一緒に過ごす時間は楽しい。</p>
+           <p>それぞれの好きなことを楽しんだり、仲間とくつろいだり。</p>
+           <p>マイファミリーの何気ない日常を、ちょっと覗いてみよう。</p>
+         </div>
+
+         <img src="./images/day09-work.png" alt="ルピとルシアの共同作業"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
+
+         <p><strong>ルピ</strong></p>
+         <p>「うーん、もう少し面白いアイデアが欲しいなぁ」</p>
+
+         <p><strong>ルシア</strong></p>
+         <p>「それなら俺に任せてみろ。いい案を出してやる」</p>
+
+         <p><strong>ルピ</strong></p>
+         <p>「その自信、いったいどこから来るの？（笑）」</p>
+
+         <p><strong>ルシア</strong></p>
+         <p>「……そこは『頼りにしてる』って言うところだろ？（笑）」</p>
+
+         <p style="text-align:center; margin-top:22px;">
+           日々、こんなやり取りをしています。
+         </p>
+       `;
+
+     } else if (day === 10) {
+       image.style.display = "none";
+       image.src = "";
+       title.textContent = "10日";
+       catchphrase.textContent = "";
+       text.textContent = "";
+
+       extra.innerHTML = `
+         <img src="./images/day10-nap.png" alt="テオの翼の中で眠るちびルシアとちゃちゃ丸"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
+
+         <p><strong>ルシア</strong></p>
+         <p>「ルピー、どこー？」</p>
+
+         <p><strong>ルピ</strong></p>
+         <p>「シー🤫 みんな寝てるんだよ」</p>
+
+         <p><strong>ルピ</strong></p>
+         <p>「こうやって見ると、まだまだ子供ね（笑）」</p>
+
+         <img src="./images/day10-watching.png" alt="眠るみんなを見守るルピとルシア"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:22px auto 0;">
+       `;
+
+     } else if (day === 11) {
+       image.style.display = "none";
+       image.src = "";
+       title.textContent = "11日　みんなのお茶会";
+       catchphrase.textContent = "";
+       text.textContent = "";
+
+       extra.innerHTML = `
+         <img src="./images/day11-tea-party.png" alt="みんなのお茶会"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
+
+         <p><strong>ちびルシア</strong></p>
+         <p>「もっとお菓子たべたいー！」</p>
+
+         <p><strong>ルシア</strong></p>
+         <p>「食べ過ぎだぞ。虫歯になるぞ」</p>
+
+         <p><strong>ちびルシア</strong></p>
+         <p>「大丈夫だもん。後でルピが磨いてくれる！」</p>
+
+         <p><strong>ルシア</strong></p>
+         <p>「またそうやって甘える。ルピも甘やかすな！！」</p>
+
+         <p><strong>ルピ</strong></p>
+         <p>「え。なんで私まで？（笑）」</p>
+       `;
+
+     } else if (day === 12) {
+       image.style.display = "none";
+       image.src = "";
+       title.textContent = "12日　ノワールの勉強・ルードの探索";
+       catchphrase.textContent = "";
+       text.textContent = "";
+
+       extra.innerHTML = `
+         <img src="./images/day12-transform.png" alt="ルシアからノワールとルードへの変身"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
+
+         <p><strong>ノワール</strong></p>
+         <p>「古い書物や資料を読み解き、知識を深める。じっくり考え、答えを探すなら私の出番だ。」</p>
+
+         <p><strong>ルード</strong></p>
+         <p>「実際にその場所へ足を運び、自分の目で確かめる。足跡や自然の変化から手がかりを探すなら俺に任せろ！」</p>
+
+         <img src="./images/day12-noir-rudo.png" alt="洞窟で勉強するノワールと草原を探索するルード"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:22px auto 0;">
+       `;
+
 } else {
         image.style.display = "none";
       
