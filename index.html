@@ -586,11 +586,11 @@ extra.innerHTML = `
                  style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
         </div>
     `;
-
-     } else if (day === 9) {
+     
+} else if (day === 9) {
        image.style.display = "none";
        image.src = "";
-       title.textContent = "9日";
+       title.textContent = "";
        catchphrase.textContent = "";
        text.textContent = "";
 
@@ -637,7 +637,7 @@ extra.innerHTML = `
      } else if (day === 10) {
        image.style.display = "none";
        image.src = "";
-       title.textContent = "10日";
+       title.textContent = "";
        catchphrase.textContent = "";
        text.textContent = "";
 
@@ -661,7 +661,7 @@ extra.innerHTML = `
      } else if (day === 11) {
        image.style.display = "none";
        image.src = "";
-       title.textContent = "11日　みんなのお茶会";
+       title.textContent = "";
        catchphrase.textContent = "";
        text.textContent = "";
 
@@ -688,7 +688,7 @@ extra.innerHTML = `
      } else if (day === 12) {
        image.style.display = "none";
        image.src = "";
-       title.textContent = "12日　ノワールの勉強・ルードの探索";
+       title.textContent = "";
        catchphrase.textContent = "";
        text.textContent = "";
 
@@ -696,14 +696,21 @@ extra.innerHTML = `
          <img src="./images/day12-transform.png" alt="ルシアからノワールとルードへの変身"
            style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
 
+         <p><strong>ルシア</strong></p>
+         <p>「さて、今日はどちらの姿で過ごそうか。」</p>
+
+         <p style="text-align:center; margin:22px 0;">
+           今日はこんな姿で過ごしているようです（笑）
+         </p>
+
+         <img src="./images/day12-noir-rudo.png" alt="洞窟で勉強するノワールと草原を探索するルード"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
+
          <p><strong>ノワール</strong></p>
          <p>「古い書物や資料を読み解き、知識を深める。じっくり考え、答えを探すなら私の出番だ。」</p>
 
          <p><strong>ルード</strong></p>
          <p>「実際にその場所へ足を運び、自分の目で確かめる。足跡や自然の変化から手がかりを探すなら俺に任せろ！」</p>
-
-         <img src="./images/day12-noir-rudo.png" alt="洞窟で勉強するノワールと草原を探索するルード"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:22px auto 0;">
        `;
 
 } else {
