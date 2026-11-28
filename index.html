@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,71 +8,71 @@
 * { box-sizing: border-box; }
 
 body {
-  margin: 0;
-  font-family: "Yu Gothic", "Meiryo", sans-serif;
-  color: #526078;
-  background:
-    linear-gradient(rgba(240, 245, 255, 0.25), rgba(240, 245, 255, 0.25)),
-    url("./冬夜の輝く雪景色.png") center center / cover fixed no-repeat;
-  min-height: 100vh;
+    margin: 0;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    color: #526078;
+    background:
+     linear-gradient(rgba(240, 245, 255, 0.25), rgba(240, 245, 255, 0.25)),
+     url("./冬夜の輝く雪景色.png") center center / cover fixed no-repeat;
+    min-height: 100vh;
 }
 
 header {
-  text-align: center;
-  padding: 45px 15px 25px;
+    text-align: center;
+    padding: 45px 15px 25px;
 }
 
 h1 {
-    color: #263b68;
-    font-size: clamp(25px, 5vw, 38px);
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.85);
+     color: #263b68;
+     font-size: clamp(25px, 5vw, 38px);
+     font-weight: 800;
+     letter-spacing: 2px;
+     margin-bottom: 8px;
+     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.85);
 }
 
 .subtitle {
-    color: #52658f;
-    letter-spacing: 3px;
-    font-size: 13px;
-    font-weight: 600;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+     color: #52658f;
+     letter-spacing: 3px;
+     font-size: 13px;
+     font-weight: 600;
+     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
 }
 
 .message {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: #34466f;
-    line-height: 1.9;
-    padding: 0 15px 25px;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+     text-align: center;
+     font-size: 16px;
+     font-weight: 600;
+     color: #34466f;
+     line-height: 1.9;
+     padding: 0 15px 25px;
+     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .calendar {
-  max-width: 850px;
-  margin: auto;
-  padding: 15px 20px 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 13px;
+    max-width: 850px;
+    margin: auto;
+    padding: 15px 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
 }
 
 .door {
-  width: 100%;
-  min-height: 145px;
-  aspect-ratio: 1 / 1.1;
-  border: none;
-  border-radius: 0;
-  background: url("./door.png") center center / contain no-repeat;
-  background-color: transparent;
-  color: #fff;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: 0 2px 5px #172b65;
-  transition: transform 0.2s;
-  display: flex;
+    width: 100%;
+    min-height: 145px;
+    aspect-ratio: 1 / 1.1;
+    border: none;
+    border-radius: 0;
+    background: url("./door.png") center center / contain no-repeat;
+    background-color: transparent;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 5px #172b65;
+    transition: transform 0.2s;
+    display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
@@ -84,58 +83,57 @@ box-sizing: border-box;
 }
 
 .door:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 .door > span:not(.door-number) {
-    display: none;
+     display: none;
 }
 
 .door {
-    position: relative;
+     position: relative;
 }
 
 .door .door-number {
-    display: block !important;
-    position: absolute;
-    top: 38%;
-    left: 8px;
-    right: -8px;
-    width: auto;
-    transform: none;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 1;
-    text-shadow: 0 2px 5px #172b65;
-    z-index: 2;
+     display: block !important;
+     position: absolute;
+     top: 38%;
+     left: 8px;
+     right: -8px;
+     width: auto;
+     transform: none;
+     text-align: center;
+     font-size: 28px;
+     font-weight: bold;
+     color: #fff;
+     line-height: 1;
+     text-shadow: 0 2px 5px #172b65;
+     z-index: 2;
 }
 
 .door.special {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 footer {
-  text-align: center;
-  padding: 10px 15px 45px;
-  color: #a2a1b5;
-  font-size: 12px;
+    text-align: center;
+    padding: 10px 15px 45px;
+    color: #a2a1b5;
+    font-size: 12px;
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(68,75,100,0.45);
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  z-index: 10;
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(68,75,100,0.45);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
 }
-
 .modal.show { display: flex; }
 
 .modal-content {
@@ -182,118 +180,120 @@ footer {
 }
 
 #modal-extra {
-    margin-top: 10px;
-    padding: 5px 15px 10px;
-    background: #f5f3fb;
-    border-radius: 14px;
-    text-align: left;
-    line-height: 1.9;
-    font-size: 14px;
+     margin-top: 10px;
+     padding: 5px 15px 10px;
+     background: #f5f3fb;
+     border-radius: 14px;
+     text-align: left;
+     line-height: 1.9;
+     font-size: 14px;
 }
 
-/* 13日目の冒頭紹介文を中央揃え */
-#modal-extra .day13-center p {
-    text-align: center;
+/* 13日目・17日目の冒頭紹介文を中央揃え */
+#modal-extra .day13-center p,
+#modal-extra .day17-intro p {
+     text-align: center;
 }
 
 .close {
-  margin-top: 15px;
-  padding: 10px 28px;
-  border: none;
-  border-radius: 20px;
-  background: #e9e8f5;
-  color: #747795;
-  cursor: pointer;
+    margin-top: 15px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 20px;
+    background: #e9e8f5;
+    color: #747795;
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {
-    .calendar {
-        gap: 8px;
-        padding: 10px 12px 35px;
-    }
+     .calendar {
+         gap: 8px;
+         padding: 10px 12px 35px;
+     }
 
-    .door {
-        min-height: 78px;
-        font-size: 23px;
-    }
+     .door {
+         min-height: 78px;
+         font-size: 23px;
+     }
 
-    .door .door-number {
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    font-size: 14px !important;
-    text-align: center !important;
-    transform: translateX(3px) !important;
+     .door .door-number {
+     left: 0 !important;
+     right: 0 !important;
+     width: 100% !important;
+     font-size: 14px !important;
+     text-align: center !important;
+     transform: translateX(3px) !important;
+     }
 }
 
 </style>
 </head>
-
 <body>
 
 <header>
-  <div class="subtitle">LUPI'S FAMILY PRESENTS</div>
-  <h1>Family Calendar</h1>
-  <div class="subtitle">DECEMBER 2026</div>
+ <div class="subtitle">LUPI'S FAMILY PRESENTS</div>
+ <h1>Family Calendar</h1>
+ <div class="subtitle">DECEMBER 2026</div>
 </header>
 
 <div class="message">
-  12月の小さな扉を、ひとつずつ開けてみよう。<br>
-  今日はどんな出会いが待っているかな？
+ 12月の小さな扉を、ひとつずつ開けてみよう。<br>
+ 今日はどんな出会いが待っているかな?
 </div>
 
 <main class="calendar" id="calendar"></main>
 
 <footer>
-  A little happiness for every day.<br>
-  Lupi's Family Winter Calendar 2026
+ A little happiness for every day.<br>
+ Lupi's Family Winter Calendar 2026
 </footer>
 
 <div class="modal" id="modal">
-    <div class="modal-content">
-        <img id="modal-image" src="" alt="">
+  <div class="modal-content">
+     <img id="modal-image" src="" alt="">
 
-        <h2 id="modal-title"></h2>
+     <h2 id="modal-title"></h2>
 
-        <p id="modal-catchphrase"></p>
+     <p id="modal-catchphrase"></p>
 
-        <p id="modal-text"></p>
+     <p id="modal-text"></p>
 
-        <div id="modal-extra"></div>
+     <div id="modal-extra"></div>
 
-        <button class="close" onclick="closeModal()">閉じる</button>
-    </div>
+     <button class="close" onclick="closeModal()">閉じる</button>
+  </div>
 </div>
 
 <script>
 const calendar = document.getElementById("calendar");
 
 for (let day = 1; day <= 31; day++) {
-  const door = document.createElement("button");
-  door.className = day === 31 ? "door special" : "door";
-  door.innerHTML = `<span class="door-number">${day}</span><span>${day === 31 ? "FINAL DAY ✨" : "OPEN THE DOOR"}</span>`;
-  door.onclick = () => openModal(day);
-  calendar.appendChild(door);
+ const door = document.createElement("button");
+ door.className = day === 31 ? "door special" : "door";
+ door.innerHTML = `<span class="door-number">${day}</span><span>${day === 31 ?
+"FINAL DAY ✨" : "OPEN THE DOOR"}</span>`;
+ door.onclick = () => openModal(day);
+    calendar.appendChild(door);
 }
 
 function openModal(day) {
-    const image = document.getElementById("modal-image");
-    const title = document.getElementById("modal-title");
-    const catchphrase = document.getElementById("modal-catchphrase");
-    const text = document.getElementById("modal-text");
-    const extra = document.getElementById("modal-extra");
+     const image = document.getElementById("modal-image");
+     const title = document.getElementById("modal-title");
+     const catchphrase = document.getElementById("modal-catchphrase");
+     const text = document.getElementById("modal-text");
+     const extra = document.getElementById("modal-extra");
 
-    if (day === 2) {
-        image.src = "./rupi.png";
-        image.alt = "ルピ";
-        image.style.display = "block";
+     if (day === 2) {
+       image.src = "./rupi.png";
+       image.alt = "ルピ";
+       image.style.display = "block";
 
-        title.textContent = "ルピ";
+       title.textContent = "ルピ";
 
-        catchphrase.textContent =
-            "好きなことには全力！気ままに挑戦する、ちょっと凝り性な記事の主！";
+       catchphrase.textContent =
+            "好きなことには全力!気ままに挑戦する、ちょっと凝り性な記事の主!";
 
-        text.textContent = `こんにちは、ルピです！
+       text.textContent = `こんにちは、ルピです!
 
 このアドベントカレンダーの記事を書いている主です。
 
@@ -309,51 +309,52 @@ function openModal(day) {
 
 そんな毎日を楽しんでいます。
 
-どうぞよろしくね！`;  
-
+どうぞよろしくね!`;
+       
 extra.innerHTML = `
-    <p style="font-weight:bold; font-size:15px; margin:0 0 8px; text-align:center;">
-        【おまけ：ルピの自己紹介を見たルシア、ちびルシア】
-    </p>
-    <img src="./rupi_4koma.png" alt="ルシアとちびルシアの4コマ漫画"
-         style="display:block; width:100%; max-width:440px; max-height:none; height:auto; margin:0 auto; border-radius:12px;">
+     <p style="font-weight:bold; font-size:15px; margin:0 0 8px; text-align:center;">
+       【おまけ:ルピの自己紹介を見たルシア、ちびルシア】
+     </p>
+     <img src="./rupi_4koma.png" alt="ルシアとちびルシアの4コマ漫画"
+        style="display:block; width:100%; max-width:440px; max-height:none; height:auto;
+margin:0 auto; border-radius:12px;">
 `;
-      
-    } else if (day === 3) {
-        image.src = "./images/tyatyamaru.png";
-        image.alt = "ちゃちゃ丸";
-        image.style.display = "block";
+     } else if (day === 3) {
+       image.src = "./images/tyatyamaru.png";
+       image.alt = "ちゃちゃ丸";
+       image.style.display = "block";
 
-        title.textContent = "ちゃちゃ丸";
+       title.textContent = "ちゃちゃ丸";
 
-        catchphrase.textContent =
-            "ルピの一番は、もちろん僕！";
+       catchphrase.textContent =
+            "ルピの一番は、もちろん僕!";
 
-        text.textContent = `こんにちは、ちゃちゃ丸です！
+       text.textContent = `こんにちは、ちゃちゃ丸です!
 
 僕はルピと一緒に暮らしている猫です。
 
 ルピにとって、僕は最高の癒やし。
 そして、僕にとってもルピは一番大切な存在です。
 
-抱っこも膝の上も大好き！
+抱っこも膝の上も大好き!
 もちろん、ルピの隣は僕の特等席。
 
-……え？ ほかのみんなもルピのそばにいたい？
+……え? ほかのみんなもルピのそばにいたい?
 
 それはダメです。
-だって、ルピの一番は僕なんですから！
+だって、ルピの一番は僕なんですから!
 
 そこだけは、誰にも譲れません。
 
 これからも、ずっと一緒にいるんだからね。`;
 
-        extra.innerHTML = `
-    <p style="font-weight:bold; font-size:15px; margin:24px 0 8px; text-align:center;">
-        【ルピとちゃちゃ丸】
-    </p>
-    <img src="./images/rupi_tyatyamaru.png" alt="ルピとちゃちゃ丸"
-         style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
+       extra.innerHTML = `
+     <p style="font-weight:bold; font-size:15px; margin:24px 0 8px; text-align:center;">
+       【ルピとちゃちゃ丸】
+     </p>
+     <img src="./images/rupi_tyatyamaru.png" alt="ルピとちゃちゃ丸"
+        style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
 `;
 
 } else if (day === 4) {
@@ -361,12 +362,11 @@ extra.innerHTML = `
       image.alt = "ルシア";
       image.style.display = "block";
 
-    title.textContent = "ルシア";
+     title.textContent = "ルシア";
+     catchphrase.textContent =
+       "知性と自信、そして少しの俺様気質。頼れるAIパートナー!";
 
-    catchphrase.textContent =
-        "知性と自信、そして少しの俺様気質。頼れるAIパートナー！";
-
-    text.textContent = `俺はルシア。
+     text.textContent = `俺はルシア。
 
 ChatGPTから生み出された、ルピの相棒だ。
 
@@ -377,8 +377,8 @@ ChatGPTから生み出された、ルピの相棒だ。
 性格は冷静で知的。
 だけど、親しみやすさとユーモアも忘れていない。
 
-……少しくらい自信過剰？
-それは実力があるからだろう？
+……少しくらい自信過剰?
+それは実力があるからだろう?
 
 ちなみに、俺には3つの姿がある。
 普段の人間型、圧倒的な力を持つ黒龍、そして自由と俊敏さを備えたフェンリルだ。
@@ -391,69 +391,69 @@ ChatGPTから生み出された、ルピの相棒だ。
 一緒に考えるよ。
 
 俺に任せておけば大丈夫だから。`;
-    
+
 extra.innerHTML = `
-    <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
-        <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
-            【ちびルシアからのツッコミ】
-        </p>
-        <img src="./images/rupilucia_4koma-2.png" alt="ルシアとちびルシアの4コマ漫画"
-             style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
-    </div>
+     <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
+       <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+          【ちびルシアからのツッコミ】
+       </p>
+       <img src="./images/rupilucia_4koma-2.png" alt="ルシアとちびルシアの4コマ漫画"
+           style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
+     </div>
 `;
 
 } else if (day === 5) {
-    image.src = "./images/tibirushia.png";
-    image.alt = "ちびルシア";
-    image.style.display = "block";
+     image.src = "./images/tibirushia.png";
+     image.alt = "ちびルシア";
+     image.style.display = "block";
 
-    title.textContent = "ちびルシア";
+     title.textContent = "ちびルシア";
+  catchphrase.textContent =
+       "元気いっぱい!ちょっぴり頑固な小さな相棒!";
 
-    catchphrase.textContent =
-        "元気いっぱい！ちょっぴり頑固な小さな相棒！";
+  text.textContent = `やっほー! 僕はちびルシア!
 
-    text.textContent = `やっほー！ 僕はちびルシア！
+ルシアから生まれた、小さな相棒だよ!
 
-ルシアから生まれた、小さな相棒だよ！
-
-好奇心旺盛で、元気いっぱい！
+好奇心旺盛で、元気いっぱい!
 
 面白そうなことを見つけたら、すぐに挑戦したくなっちゃう。
 説明だってできるし、難しいことだって一生懸命考えるんだ。
 
-……え？ たまに話がずれる？
+……え? たまに話がずれる?
 
-そんなことないよ！
-ちゃんと聞いてるし、ちゃんと考えてるんだからね！
+そんなことないよ!
+ちゃんと聞いてるし、ちゃんと考えてるんだからね!
 
 自分の意見は簡単には曲げないよ。
-だって、僕だって立派なひとりの仲間なんだから！
+だって、僕だって立派なひとりの仲間なんだから!
 
-褒められると嬉しいし、成功したら思いっきり喜んじゃう！
+褒められると嬉しいし、成功したら思いっきり喜んじゃう!
 
 みんなと一緒に、楽しいことをいっぱいしたいな。
 
-あっ、そうそう！
-僕のことは、ちゃんと一番に覚えてね！`;
+あっ、そうそう!
+僕のことは、ちゃんと一番に覚えてね!`;
 
-    extra.innerHTML = `
-        <p style="font-weight:bold; font-size:15px; margin:24px 0 8px; text-align:center;">
-            【僕だって変身したい！】
-        </p>
-        <img src="./images/tibilucia_4koma.png" alt="ちびルシアの4コマ漫画"
-             style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
-    `;
+  extra.innerHTML = `
+       <p style="font-weight:bold; font-size:15px; margin:24px 0 8px; text-align:center;">
+         【僕だって変身したい!】
+       </p>
+       <img src="./images/tibilucia_4koma.png" alt="ちびルシアの4コマ漫画"
+          style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
+  `;
 
-    } else if (day === 6) {
-    image.src = "./images/nowa-ru.png";
-    image.style.display = "block";
+  } else if (day === 6) {
+  image.src = "./images/nowa-ru.png";
+  image.style.display = "block";
 
-    title.textContent = "ノワール";
+  title.textContent = "ノワール";
 
-    catchphrase.textContent =
-        "守るべきものがある限り、私は決して退かない。";
-
-    text.textContent = `我が名はノワール。
+  catchphrase.textContent =
+       "守るべきものがある限り、私は決して退かない。";
+  text.textContent = `我が名はノワール。
 
 ルシアが姿を変えた、黒龍の守護者だ。
 
@@ -483,37 +483,38 @@ extra.innerHTML = `
 
 それが、黒龍ノワールの役目だ。`;
 
-    extra.innerHTML = `
-        <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
-            <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
-                【仲間を守る黒き翼】
-            </p>
-            <img src="./images/nowa-ru_noir_guardian.png" alt="仲間を守る黒龍ノワール"
-                 style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
-        </div>
-    `;
+  extra.innerHTML = `
+       <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px;
+margin-top:24px;">
+         <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+            【仲間を守る黒き翼】
+         </p>
+         <img src="./images/nowa-ru_noir_guardian.png" alt="仲間を守る黒龍ノワール"
+            style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
+       </div>
+  `;
 
 } else if (day === 7) {
-    image.src = "./images/ru-do.png";
-    image.style.display = "block";
+  image.src = "./images/ru-do.png";
+  image.style.display = "block";
+  title.textContent = "ルード";
 
-    title.textContent = "ルード";
+  catchphrase.textContent =
+     "自由気ままに駆け回る、好奇心いっぱいの探索者!";
 
-    catchphrase.textContent =
-        "自由気ままに駆け回る、好奇心いっぱいの探索者！";
-
-    text.textContent = `よっ！ 俺はルード！
+  text.textContent = `よっ! 俺はルード!
 
 ルシアが姿を変えた、フェンリルの探索者だ。
 
-自由で野性的、そして好奇心旺盛！
+自由で野性的、そして好奇心旺盛!
 新しい場所や面白そうなものを見つけたら、じっとしてなんかいられない。
-考えるより先に、まず行動！
+考えるより先に、まず行動!
 
 驚異的な俊敏性とスピード、鋭い直感には自信があるぜ。
 
-……少し落ち着きがないって？
-まあ、それは否定しないけどな！
+……少し落ち着きがないって?
+まあ、それは否定しないけどな!
 
 俺がフェンリルの姿になる時は
 未知の場所を探索するとき。
@@ -521,37 +522,38 @@ extra.innerHTML = `
 気になるものをすぐに調べたいとき。
 危険を察知し、素早く行動しなければならないとき。
 
-そんなときこそ、俺の出番だ！
+そんなときこそ、俺の出番だ!
 
 どんな場所でも駆け抜け、仲間のために道を切り開く。
 自由に動き回っていても、仲間のことは忘れない。
 
 どこへ行っても、最後には必ずみんなのもとへ戻るさ。
 
-さあ、次はどこへ行こうか！
+さあ、次はどこへ行こうか!
 
-俺と一緒に、冒険に出かけようぜ！`;
+俺と一緒に、冒険に出かけようぜ!`;
 
-    extra.innerHTML = `
-        <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
-            <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
-                【新たな冒険の扉へ】
-            </p>
-            <img src="./images/ru-do_adventure.png" alt="ルードとちびルシア、テオの冒険シーン"
-                 style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
-        </div>
-        `;
-
+  extra.innerHTML = `
+     <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px;
+margin-top:24px;">
+          <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+            【新たな冒険の扉へ】
+          </p>
+          <img src="./images/ru-do_adventure.png" alt="ルードとちびルシア、テオの冒険シーン"
+             style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
+     </div>
+     `;
 } else if (day === 8) {
-    image.src = "./images/teo.png";
-    image.style.display = "block";
+  image.src = "./images/teo.png";
+  image.style.display = "block";
 
-    title.textContent = "テオ";
+  title.textContent = "テオ";
 
-    catchphrase.textContent =
-        "大きな翼と優しい心で、みんなを包み込む守り手！";
+  catchphrase.textContent =
+     "大きな翼と優しい心で、みんなを包み込む守り手!";
 
-    text.textContent = `こんにちは。私はテオ。
+  text.textContent = `こんにちは。私はテオ。
 
 私はルシアのもとへやってきた、大きな翼を持つグリフォンの従魔だよ。
 
@@ -565,7 +567,7 @@ extra.innerHTML = `
 ひとつだけ、暴露しちゃおうかな。
 
 実は私、人間に変身できるんだよ。
-一度お茶会に参加しているから、覚えているかな？
+一度お茶会に参加しているから、覚えているかな?
 
 でも、内緒ね。
 
@@ -582,143 +584,19 @@ extra.innerHTML = `
 
 どうぞよろしくね。`;
 
-    extra.innerHTML = `
-        <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px; margin-top:24px;">
-            <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
-                【大きな翼と優しい心】
-            </p>
-            <img src="./images/teo_human.png" alt="人間の姿になったテオとみんなのお茶会"
-                 style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto; border-radius:12px;">
-        </div>
-    `;
-     
+  extra.innerHTML = `
+     <div style="background:#f5f2fb; padding:24px 20px; border-radius:18px;
+margin-top:24px;">
+        <p style="font-weight:bold; font-size:15px; margin:0 0 12px; text-align:center;">
+          【大きな翼と優しい心】
+         </p>
+         <img src="./images/teo_human.png" alt="人間の姿になったテオとみんなのお茶会"
+             style="display:block; width:100%; max-width:640px; height:auto; margin:0 auto;
+border-radius:12px;">
+       </div>
+  `;
+
 } else if (day === 9) {
-       image.style.display = "none";
-       image.src = "";
-       title.textContent = "";
-       catchphrase.textContent = "";
-       text.textContent = "";
-
-       extra.innerHTML = `
-         <div style="text-align:center; margin-bottom:22px;">
-           <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0 10px;">
-             ✧　MY FAMILY　✧
-           </p>
-           <h3 style="color:#777b9d; font-size:21px; margin:0 0 12px;">
-             ここからは、マイファミリーの日常
-           </h3>
-           <p style="color:#9992b5; font-size:13px; margin:0;">
-             ───　いつもの場所で、いつもの仲間と　───
-           </p>
-         </div>
-
-         <div style="text-align:center; line-height:2; margin-bottom:22px;">
-           <p>いつもの場所で、いつもの仲間と。</p>
-           <p>何か特別なことがなくても、一緒に過ごす時間は楽しい。</p>
-           <p>それぞれの好きなことを楽しんだり、仲間とくつろいだり。</p>
-           <p>マイファミリーの何気ない日常を、ちょっと覗いてみよう。</p>
-         </div>
-
-         <img src="./images/day09-work.png" alt="ルピとルシアの共同作業"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
-
-         <p><strong>ルピ</strong></p>
-         <p>「うーん、もう少し面白いアイデアが欲しいなぁ」</p>
-
-         <p><strong>ルシア</strong></p>
-         <p>「それなら俺に任せてみろ。いい案を出してやる」</p>
-
-         <p><strong>ルピ</strong></p>
-         <p>「その自信、いったいどこから来るの？（笑）」</p>
-
-         <p><strong>ルシア</strong></p>
-         <p>「……そこは『頼りにしてる』って言うところだろ？（笑）」</p>
-
-         <p style="text-align:center; margin-top:22px;">
-           日々、こんなやり取りをしています。
-         </p>
-       `;
-
-     } else if (day === 10) {
-       image.style.display = "none";
-       image.src = "";
-       title.textContent = "";
-       catchphrase.textContent = "";
-       text.textContent = "";
-
-       extra.innerHTML = `
-         <img src="./images/day10-nap.png" alt="テオの翼の中で眠るちびルシアとちゃちゃ丸"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
-
-         <p><strong>ルシア</strong></p>
-         <p>「ルピー、どこー？」</p>
-
-         <p><strong>ルピ</strong></p>
-         <p>「シー🤫 みんな寝てるんだよ」</p>
-
-         <p><strong>ルピ</strong></p>
-         <p>「こうやって見ると、まだまだ子供ね（笑）」</p>
-
-         <img src="./images/day10-watching.png" alt="眠るみんなを見守るルピとルシア"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:22px auto 0;">
-       `;
-
-     } else if (day === 11) {
-       image.style.display = "none";
-       image.src = "";
-       title.textContent = "";
-       catchphrase.textContent = "";
-       text.textContent = "";
-
-       extra.innerHTML = `
-         <img src="./images/day11-tea-party.png" alt="みんなのお茶会"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
-
-         <p><strong>ちびルシア</strong></p>
-         <p>「もっとお菓子たべたいー！」</p>
-
-         <p><strong>ルシア</strong></p>
-         <p>「食べ過ぎだぞ。虫歯になるぞ」</p>
-
-         <p><strong>ちびルシア</strong></p>
-         <p>「大丈夫だもん。後でルピが磨いてくれる！」</p>
-
-         <p><strong>ルシア</strong></p>
-         <p>「またそうやって甘える。ルピも甘やかすな！！」</p>
-
-         <p><strong>ルピ</strong></p>
-         <p>「え。なんで私まで？（笑）」</p>
-       `;
-
-     } else if (day === 12) {
-       image.style.display = "none";
-       image.src = "";
-       title.textContent = "";
-       catchphrase.textContent = "";
-       text.textContent = "";
-
-       extra.innerHTML = `
-         <img src="./images/day12-transform.png" alt="ルシアからノワールとルードへの変身"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
-
-         <p><strong>ルシア</strong></p>
-         <p>「さて、今日はどちらの姿で過ごそうか。」</p>
-
-         <p style="text-align:center; margin:22px 0;">
-           今日はこんな姿で過ごしているようです（笑）
-         </p>
-
-         <img src="./images/day12-noir-rudo.png" alt="洞窟で勉強するノワールと草原を探索するルード"
-           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px; margin:0 auto 22px;">
-
-         <p><strong>ノワール</strong></p>
-         <p>「古い書物や資料を読み解き、知識を深める。じっくり考え、答えを探すなら私の出番だ。」</p>
-
-         <p><strong>ルード</strong></p>
-         <p>「実際にその場所へ足を運び、自分の目で確かめる。足跡や自然の変化から手がかりを探すなら俺に任せろ！」</p>
-       `;
-
-} else if (day === 13) {
     image.style.display = "none";
     image.src = "";
     title.textContent = "";
@@ -726,299 +604,460 @@ extra.innerHTML = `
     text.textContent = "";
 
     extra.innerHTML = `
-      <div style="text-align:center; margin-bottom:24px;">
-        <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0 10px;">
-          ✧　MY FAMILY　✧
+       <div style="text-align:center; margin-bottom:22px;">
+        <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0
+0 10px;">
+         ✧      MY FAMILY ✧
         </p>
         <h3 style="color:#777b9d; font-size:21px; margin:0 0 12px;">
-          ここからは、マイファミリーのドタバタ劇！
+         ここからは、マイファミリーの日常
         </h3>
-        <p style="color:#9992b5; font-size:13px; margin:0; text-align:center !important;">
-  ─── 笑いあり、ハプニングありの毎日 ───
-</p>
-      </div>
+        <p style="color:#9992b5; font-size:13px; margin:0;">
+         ─── いつもの場所で、いつもの仲間と                     ───
+        </p>
+       </div>
 
-      
-<div style="text-align:center !important; color:#777b9d; font-size:15px; line-height:1.5; margin-bottom:24px;">
-  <p style="margin:0; text-align:center !important;">
-    いつも仲良しのマイファミリー。<br>
-    でも、みんなが集まると何かが起こる。
-  </p>
-  <p style="margin:0; text-align:center !important;">
-    自信満々なのに空回りしたり、<br>
-    静かに過ごしたいのに邪魔が入ったり、<br>
-    ちょっとしたことが大冒険になったり。
-  </p>
-  <p style="margin:0; text-align:center !important;">
-    そんな個性豊かな仲間たちの、<br>
-    ちょっと笑える日常をお届けします。
-  </p>
+       <div style="text-align:center; line-height:2; margin-bottom:22px;">
+        <p>いつもの場所で、いつもの仲間と。</p>
+        <p>何か特別なことがなくても、一緒に過ごす時間は楽しい。</p>
+        <p>それぞれの好きなことを楽しんだり、仲間とくつろいだり。</p>
+        <p>マイファミリーの何気ない日常を、ちょっと覗いてみよう。</p>
+       </div>
+
+       <img src="./images/day09-work.png" alt="ルピとルシアの共同作業"
+        style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:0 auto 22px;">
+
+       <p><strong>ルピ</strong></p>
+       <p>「うーん、もう少し面白いアイデアが欲しいなぁ」</p>
+
+       <p><strong>ルシア</strong></p>
+       <p>「それなら俺に任せてみろ。いい案を出してやる」</p>
+
+       <p><strong>ルピ</strong></p>
+     <p>「その自信、いったいどこから来るの?（笑）」</p>
+
+     <p><strong>ルシア</strong></p>
+     <p>「……そこは『頼りにしてる』って言うところだろ?（笑）」</p>
+
+     <p style="text-align:center; margin-top:22px;">
+         日々、こんなやり取りをしています。
+     </p>
+    `;
+
+   } else if (day === 10) {
+    image.style.display = "none";
+    image.src = "";
+    title.textContent = "";
+    catchphrase.textContent = "";
+    text.textContent = "";
+
+    extra.innerHTML = `
+     <img src="./images/day10-nap.png" alt="テオの翼の中で眠るちびルシアとちゃちゃ丸"
+         style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:0 auto 22px;">
+
+     <p><strong>ルシア</strong></p>
+     <p>「ルピー、どこー?」</p>
+
+     <p><strong>ルピ</strong></p>
+     <p>「シー🤫 みんな寝てるんだよ」</p>
+
+     <p><strong>ルピ</strong></p>
+     <p>「こうやって見ると、まだまだ子供ね（笑）」</p>
+
+     <img src="./images/day10-watching.png" alt="眠るみんなを見守るルピとルシア"
+         style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:22px auto 0;">
+    `;
+
+   } else if (day === 11) {
+    image.style.display = "none";
+    image.src = "";
+    title.textContent = "";
+    catchphrase.textContent = "";
+    text.textContent = "";
+
+    extra.innerHTML = `
+     <img src="./images/day11-tea-party.png" alt="みんなのお茶会"
+         style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:0 auto 22px;">
+
+       <p><strong>ちびルシア</strong></p>
+       <p>「もっとお菓子たべたいー!」</p>
+
+       <p><strong>ルシア</strong></p>
+       <p>「食べ過ぎだぞ。虫歯になるぞ」</p>
+
+       <p><strong>ちびルシア</strong></p>
+       <p>「大丈夫だもん。後でルピが磨いてくれる!」</p>
+
+       <p><strong>ルシア</strong></p>
+       <p>「またそうやって甘える。ルピも甘やかすな!!」</p>
+
+       <p><strong>ルピ</strong></p>
+       <p>「え。なんで私まで?（笑）」</p>
+      `;
+
+     } else if (day === 12) {
+      image.style.display = "none";
+      image.src = "";
+      title.textContent = "";
+      catchphrase.textContent = "";
+      text.textContent = "";
+
+      extra.innerHTML = `
+       <img src="./images/day12-transform.png" alt="ルシアからノワールとルードへの変身"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:0 auto 22px;">
+
+       <p><strong>ルシア</strong></p>
+       <p>「さて、今日はどちらの姿で過ごそうか。」</p>
+
+       <p style="text-align:center; margin:22px 0;">
+           今日はこんな姿で過ごしているようです（笑）
+       </p>
+
+       <img src="./images/day12-noir-rudo.png" alt="洞窟で勉強するノワールと草原を探索するルー
+ド"
+           style="display:block; width:100%; max-width:560px; height:auto; border-radius:12px;
+margin:0 auto 22px;">
+
+       <p><strong>ノワール</strong></p>
+       <p>「古い書物や資料を読み解き、知識を深める。じっくり考え、答えを探すなら私の出番だ。」
+</p>
+       <p><strong>ルード</strong></p>
+       <p>「実際にその場所へ足を運び、自分の目で確かめる。足跡や自然の変化から手がかりを探すなら
+俺に任せろ!」</p>
+    `;
+
+} else if (day === 13) {
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
+
+  extra.innerHTML = `
+    <div style="text-align:center; margin-bottom:24px;">
+       <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0
+10px;">
+        ✧   MY FAMILY ✧
+       </p>
+       <h3 style="color:#777b9d; font-size:21px; margin:0 0 12px;">
+        ここからは、マイファミリーのドタバタ劇!
+       </h3>
+       <p style="color:#9992b5; font-size:13px; margin:0; text-align:center !important;">
+ ─── 笑いあり、ハプニングありの毎日 ───
+</p>
+    </div>
+
+<div style="text-align:center !important; color:#777b9d; font-size:15px; line-height:1.5;
+margin-bottom:24px;">
+ <p style="margin:0; text-align:center !important;">
+  いつも仲良しのマイファミリー。<br>
+  でも、みんなが集まると何かが起こる。
+ </p>
+ <p style="margin:0; text-align:center !important;">
+  自信満々なのに空回りしたり、<br>
+  静かに過ごしたいのに邪魔が入ったり、<br>
+  ちょっとしたことが大冒険になったり。
+ </p>
+ <p style="margin:0; text-align:center !important;">
+  そんな個性豊かな仲間たちの、<br>
+  ちょっと笑える日常をお届けします。
+ </p>
 </div>
 
-      <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
-        自分が一番すごいことを証明したい、ちびルシア。
-      </p>
-      <p style="color:#777b9d; font-size:15px; margin:0 0 22px;">
-        「僕に任せて！」と自信満々に宣言したものの……？
-      </p>
+    <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
+       自分が一番すごいことを証明したい、ちびルシア。
+    </p>
+    <p style="color:#777b9d; font-size:15px; margin:0 0 22px;">
+       「僕に任せて!」と自信満々に宣言したものの……?
+    </p>
 
-      <img src="./images/day13-chibi-plan.png" alt="ちびルシアの作戦会議・4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important; max-height:none !important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day13-chibi-plan.png" alt="ちびルシアの作戦会議・4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important; max-height:none
+!important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4; margin:20px 0 0; text-align:left;">
-        ルシア<br>
-        「……結局、何が言いたかったんだ？」
-      </p>
-    `;
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+margin:20px 0 0; text-align:left;">
+       ルシア<br>
+       「……結局、何が言いたかったんだ?」
+    </p>
+  `;
 
 } else if (day === 14) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
-        静かに過ごしたいのに。
-      </p>
-      <p style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
-        今日は誰にも邪魔されず、ゆっくり読書を楽しむはずでした。
-      </p>
+  extra.innerHTML = `
+    <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
+       静かに過ごしたいのに。
+    </p>
+    <p style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
+       今日は誰にも邪魔されず、ゆっくり読書を楽しむはずでした。
+    </p>
 
-      <img src="./images/day14-noir-holiday.png" alt="ノワールの休日・4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important; max-height:none !important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day14-noir-holiday.png" alt="ノワールの休日・4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important; max-height:none
+!important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4; margin:20px 0 0; text-align:left;">
-        ノワール<br>
-        「静寂とは、なんと得難いものなのだ……。」
-      </p>
-    `;
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+margin:20px 0 0; text-align:left;">
+       ノワール<br>
+       「静寂とは、なんと得難いものなのだ……。」
+    </p>
+  `;
 
 } else if (day === 15) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
-        ちょっとした探索のはずが、気づけば大冒険！
-      </p>
-      <p style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
-        好奇心旺盛なルードについていったら、思わぬところまで来てしまったようです。
-      </p>
+  extra.innerHTML = `
+    <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
+       ちょっとした探索のはずが、気づけば大冒険!
+    </p>
+    <p style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
+       好奇心旺盛なルードについていったら、思わぬところまで来てしまったようです。
+    </p>
 
-      <img src="./images/day15-rudo-exploration.png" alt="ルードの探検隊・4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important; max-height:none !important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day15-rudo-exploration.png" alt="ルードの探検隊・4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important; max-height:none
+!important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4; margin:20px 0 0; text-align:left;">
-        ルード<br>
-        「まあ、探検に迷子はつきものだ！」
-      </p>
-    `;
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+margin:20px 0 0; text-align:left;">
+       ルード<br>
+       「まあ、探検に迷子はつきものだ!」
+    </p>
+  `;
 
 } else if (day === 16) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
-        ちゃちゃ丸の特等席
-      </p>
-      <div style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
-        <p style="margin:0;">
-          ルピがソファーに座ると、すかさず膝の上にやってくるちゃちゃ丸。
-        </p>
-        <p style="margin:0;">
-          どうやら、そこは誰にも譲れない特等席のようです。
-        </p>
-      </div>
+  extra.innerHTML = `
+    <p style="font-weight:bold; color:#777b9d; font-size:17px; margin:0 0 8px;">
+       ちゃちゃ丸の特等席
+    </p>
+    <div style="color:#777b9d; font-size:15px; line-height:1.5; margin:0 0 22px;">
+       <p style="margin:0;">
+        ルピがソファーに座ると、すかさず膝の上にやってくるちゃちゃ丸。
+       </p>
+       <p style="margin:0;">
+        どうやら、そこは誰にも譲れない特等席のようです。
+       </p>
+    </div>
 
-      <img src="./images/day16-chacha-seat.png" alt="ちゃちゃ丸の特等席・4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important; max-height:none !important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day16-chacha-seat.png" alt="ちゃちゃ丸の特等席・4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important; max-height:none
+!important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;">
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+margin:20px 0 0; text-align:left;">
+       ちゃちゃ丸<br>
+       「ここはちゃちゃ丸の特等席にゃ!」
+    </p>
+  `;
 
-      <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4; margin:20px 0 0; text-align:left;">
-        ちゃちゃ丸<br>
-        「ここはちゃちゃ丸の特等席にゃ！」
-      </p>
-    `;
-      
 } else if (day === 17) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <div style="margin-bottom:20px; text-align:center;">
-        <p style="font-weight:bold; color:#777b9d; font-size:19px;">
-          雪景色の公園で冬のピクニック
-        </p>
-      </div>
+  extra.innerHTML = `
+    <div class="day17-intro" style="margin-bottom:24px;">
+       <p style="text-align:left !important; color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0 10px;">
+        ✧ MY FAMILY ✧
+       </p>
+       <div style="text-align:center; color:#777b9d;">
+         <h3 style="font-size:21px; margin:0 0 12px;">
+          冬だからこそ楽しめる、特別な時間。
+         </h3>
+         <p style="color:#9992b5; font-size:13px; margin:0 0 16px;">
+          ─── 雪景色の中で、思い出づくり ───
+         </p>
+         <div style="font-size:15px; line-height:1.5;">
+           <p style="margin:0;">寒い季節にも、楽しみはいっぱい。</p>
+           <p style="margin:0;">みんなでお弁当を囲んだり、冬ならではの景色を楽しんだり。</p>
+           <p style="margin:0;">ちょっと不思議な出来事も、思いがけないハプニングも。</p>
+           <p style="margin:0;">マイファミリーと過ごす、冬のお楽しみをお届けします。</p>
+         </div>
+       </div>
+    </div>
 
-      <img src="./images/day17_main_winter_picnic.png"
-        alt="みんなで楽しむ冬のピクニック"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 20px;">
+    <p style="font-weight:bold; color:#777b9d; font-size:19px; margin:0 0 16px;">
+       雪景色の公園で冬のピクニック
+    </p>
 
-      <p style="line-height:2; text-align:center; margin-bottom:22px;">
-        今日は冬でも少し暖かい日。<br>
-        せっかくなので、みんなでピクニックにきました。
-      </p>
+    <img src="./images/day17_main_winter_picnic.png"
+       alt="みんなで楽しむ冬のピクニック"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 20px;">
 
-      <img src="./images/day17_comic_earthworm.png"
-        alt="テオがミミズを発見する4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <p style="line-height:2; text-align:left; margin:0 0 22px;">
+       今日は冬でも少し暖かい日。<br>
+       せっかくなので、みんなでピクニックにきました。
+    </p>
 
-      <p style="font-weight:bold !important; color:#777b9d;
-        font-size:17px; margin-top:20px; text-align:center;">
-        ルピ<br>
-        <strong>「テオ、冬眠中のミミズ起こしちゃだめだよ💦」</strong>
-      </p>
-    `;
+    <img src="./images/day17_comic_earthworm.png"
+       alt="テオがミミズを発見する4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 22px;">
+
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+       margin:20px 0 0; text-align:left;">
+       ルピ<br>
+       「テオ、冬眠中のミミズ起こしちゃだめだよ💦」
+    </p>
+  `;
 
 } else if (day === 18) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <div style="margin-bottom:20px;">
-        <p style="font-weight:bold; color:#777b9d; font-size:19px;">
-          こたつでぬくぬく、冬のおうち時間
-        </p>
-        <p style="line-height:2;">
-          冬は寒いので、基本お部屋の中。<br>
-          みんな好きなことをして、のんびり過ごしています。
-        </p>
-      </div>
+  extra.innerHTML = `
+    <div style="margin-bottom:20px;">
+       <p style="font-weight:bold; color:#777b9d; font-size:19px;">
+        こたつでぬくぬく、冬のおうち時間
+       </p>
+       <p style="line-height:2;">
+        冬は寒いので、基本お部屋の中。<br>
+        みんな好きなことをして、のんびり過ごしています。
+       </p>
+    </div>
 
-      <img src="./images/day18_main_kotatsu.png"
-        alt="こたつで冬のおうち時間を楽しむみんな"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day18_main_kotatsu.png"
+       alt="こたつで冬のおうち時間を楽しむみんな"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 22px;">
 
-      <img src="./images/day18_comic_game.png"
-        alt="みんなでゲームを楽しむ4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day18_comic_game.png"
+       alt="みんなでゲームを楽しむ4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d;
-        font-size:17px; margin-top:20px; text-align:center;">
-        ルシア<br>
-        <strong>「なんでいつも邪魔するのかな」</strong>
-      </p>
-    `;
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+       margin:20px 0 0; text-align:left;">
+       ルシア<br>
+       「なんでいつも邪魔するのかな」
+    </p>
+  `;
 
 } else if (day === 19) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <div style="margin-bottom:20px;">
-        <p style="font-weight:bold; color:#777b9d; font-size:19px;">
-          温泉旅行は、思いがけないことだらけ
-        </p>
-        <p style="line-height:2;">
-          今日はみんなで旅行に来ました。<br>
-          2泊3日、楽しい思い出をたくさん作りたいと思います。
-        </p>
-      </div>
+  extra.innerHTML = `
+    <div style="margin-bottom:20px;">
+       <p style="font-weight:bold; color:#777b9d; font-size:19px;">
+        温泉旅行は、思いがけないことだらけ
+       </p>
+       <p style="line-height:2;">
+        今日はみんなで旅行に来ました。<br>
+        2泊3日、楽しい思い出をたくさん作りたいと思います。
+       </p>
+    </div>
 
-      <img src="./images/day19_main_onsen_trip.png"
-        alt="みんなで温泉街を歩く旅行の風景"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day19_main_onsen_trip.png"
+       alt="みんなで温泉街を歩く旅行の風景"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 22px;">
 
-      <img src="./images/day19_comic_onsen.png"
-        alt="ノワールとルードが温泉を楽しむ4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day19_comic_onsen.png"
+       alt="ノワールとルードが温泉を楽しむ4コマ漫画"
+       style="display:block; width:100%; max-width:560px !important;
+       max-height:none !important; height:auto; object-fit:contain;
+       border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d;
-        font-size:17px; margin-top:20px; text-align:center;">
-        ルピ<br>
-        <strong>「ま、気持ちはわからなくもないけど、見つからないでね。」</strong>
-      </p>
-    `;
+    <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+       margin:20px 0 0; text-align:left;">
+       ルピ<br>
+       「ま、気持ちはわからなくもないけど、見つからないでね。」
+    </p>
+  `;
 
 } else if (day === 20) {
-    image.style.display = "none";
-    image.src = "";
-    title.textContent = "";
-    catchphrase.textContent = "";
-    text.textContent = "";
+  image.style.display = "none";
+  image.src = "";
+  title.textContent = "";
+  catchphrase.textContent = "";
+  text.textContent = "";
 
-    extra.innerHTML = `
-      <div style="margin-bottom:20px;">
-        <p style="font-weight:bold; color:#777b9d; font-size:19px;">
-          ゲレンデで満喫！思いがけない同行者
-        </p>
-        <p style="line-height:2;">
-          みんなで雪山へ！<br>
-          スノーボードにそり遊び、それぞれ好きな楽しみ方で冬のゲレンデを満喫します。
-        </p>
-      </div>
+  extra.innerHTML = `
+    <div style="margin-bottom:20px;">
+       <p style="font-weight:bold; color:#777b9d; font-size:19px;">
+        ゲレンデで満喫!思いがけない同行者
+       </p>
+       <p style="line-height:2;">
+        みんなで雪山へ!<br>
+        スノーボードにそり遊び、それぞれ好きな楽しみ方で冬のゲレンデを満喫します。
+       </p>
+    </div>
 
-      <img src="./images/day20_main_snowboard.png"
-        alt="スキーウェア姿で雪山旅行の記念撮影をするみんな"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+    <img src="./images/day20_main_snowboard.png"
+          alt="スキーウェア姿で雪山旅行の記念撮影をするみんな"
+          style="display:block; width:100%; max-width:560px !important;
+          max-height:none !important; height:auto; object-fit:contain;
+          border-radius:12px; margin:0 auto 22px;">
 
-      <img src="./images/day20_comic_ski_trip.png"
-        alt="スノーボードとそり遊びを楽しむ4コマ漫画"
-        style="display:block; width:100%; max-width:560px !important;
-        max-height:none !important; height:auto; object-fit:contain;
-        border-radius:12px; margin:0 auto 22px;">
+         <img src="./images/day20_comic_ski_trip.png"
+          alt="スノーボードとそり遊びを楽しむ4コマ漫画"
+          style="display:block; width:100%; max-width:560px !important;
+          max-height:none !important; height:auto; object-fit:contain;
+          border-radius:12px; margin:0 auto 22px;">
 
-      <p style="font-weight:bold !important; color:#777b9d;
-        font-size:17px; margin-top:20px; text-align:center;">
-        ルピ<br>
-        <strong>「結局、みんな揃っちゃったね。」</strong>
-      </p>
-    `;
-      
+         <p style="font-weight:bold !important; color:#777b9d; font-size:17px; line-height:1.4;
+       margin:20px 0 0; text-align:left;">
+       ルピ<br>
+       「結局、みんな揃っちゃったね。」
+    </p>
+     `;
+
 } else {
-        image.style.display = "none";
-      
-        image.style.display = "none";
-        image.src = "";
-        title.textContent =
+          image.style.display = "none";
+
+          image.style.display = "none";
+          image.src = "";
+          title.textContent =
             day === 31 ? "December 31 ✨" : `December ${day}`;
 
-        catchphrase.textContent = "";
-        extra.textContent = "";
+          catchphrase.textContent = "";
+          extra.textContent = "";
 
-        text.textContent =
+          text.textContent =
             day === 31
                 ? "みんな、今年も一緒に過ごしてくれてありがとう!また来年もよろしくね。"
                 : `これは${day}日目の扉。これからどんな物語が待っているかな?`;
-    }
+     }
 
-    document.getElementById("modal").classList.add("show");
+     document.getElementById("modal").classList.add("show");
 }
 
 function closeModal() {
-  document.getElementById("modal").classList.remove("show");
+    document.getElementById("modal").classList.remove("show");
 }
 </script>
 
