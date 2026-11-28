@@ -191,6 +191,11 @@ footer {
     font-size: 14px;
 }
 
+/* 13日目の冒頭紹介文を中央揃え */
+#modal-extra .day13-center p {
+    text-align: center;
+}
+
 .close {
   margin-top: 15px;
   padding: 10px 28px;
@@ -721,7 +726,7 @@ extra.innerHTML = `
        text.textContent = "";
 
        extra.innerHTML = `
-         <div style="text-align:center; margin-bottom:22px;">
+         <div class="day13-center" style="text-align:center; margin-bottom:22px;">
            <p style="color:#9992b5; font-size:13px; letter-spacing:3px; font-weight:bold; margin:0 0 10px;">
              ✧　MY FAMILY　✧
            </p>
@@ -757,9 +762,10 @@ extra.innerHTML = `
          <img src="./images/day13-chibi-plan.png" alt="ちびルシアの作戦会議・4コマ漫画"
   style="display:block; width:100%; max-width:560px !important; max-height:none !important; height:auto; object-fit:contain; border-radius:12px; margin:0 auto 22px;"
 
-         <p style="font-weight:bold; color:#777b9d; font-size:17px; margin-top:20px; text-align:left;">
-           ルシア「……結局、何が言いたかったんだ？」
-         </p>
+<p style="font-weight:bold; color:#777b9d; font-size:19px; margin-top:20px; text-align:center;">
+    ルシア「……結局、何が言いたかったんだ？」
+</p>
+
        `;
       
      } else if (day === 14) {
